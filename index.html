@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        @import"https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+        body{
+            background: url(bg11.jpg) no-repeat fixed;
+        }
+        .boxmodel{
+            color: linen;
+           border-style:double;
+           border-color: chartreuse;
+           border-width: 10px 10px;
+            margin: 4px;
+            padding: 5px;
+            background-color: rgb(241, 11, 11);
+            text-align: center;
+        }
+        .header{
+           font-size: 20px;
+           color:rgb(255, 0, 234);
+           padding: 30px;
+    }
+    .neeru{
+        outline: none;
+        border:orangered solid 4px;
+        width: 200px;
+        height: 30px;
+        background: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 20px;
+    }
+    .border-bottom{
+        color: darkorange;
+        height: 65px;
+        width: 355px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        border-bottom: rgb(255, 0, 221) solid 5px;
+        border-top:hidden;
+        border-left: hidden;
+        border-right: hidden;
+        outline: none;
+        background: none;
+    }
+    form i{
+        font-size: 30px;
+        padding-top: 10px;
+        color: rgb(0, 0, 0);
+    }
+    </style>
+<body>
+<h1 class="boxmodel"><u>Neeraj singh negi</u></h1>
+<div>
+<div style="height: 30px; width: 600px;">
+    <a href="#" class="header">Home</a>&#160;&#160;
+    <a href="#" class="header">News</a>&#160;&#160;
+    <a href="#" class="header">Courses</a>&#160;&#160;
+    <a href="#" class="header">About creater</a>
+</div>
+<br>
+<br>
+<form class="bgchange" method="POST" action="connect.php">
+    <fieldset style="width: 70%; font-size: 30;">
+        <legend style=" color: darkblue; font-weight: bolder;">
+            <marquee>Personal-Information</marquee>
+          </legend>
+          <i class="fas fa-user"></i>
+          <input class="border-bottom"type="Text" placeholder="Username or Email Id" name="username">
+          <br>
+          <i class="fas fa-lock"></i>
+          <input class="border-bottom"type="password" placeholder="Password" name="password">
+          <br>
+          <br>
+         <p> Firstname :</p>
+		<input class="neeru" type="text" name="Firstname" placeholder="Name" ><br>
+		<br>
+		<p>Lastname :</p>
+		<input class="neeru"  type="text" name="Lastname" placeholder="Sir name"><br>
+		<br>
+		<p>Date of Birth :</p>
+		<input class="neeru"  type="date" name="Date of Birth"><br>
+		<br>
+	<p>Age</p> <input  class="neeru" type="number" name="Age" min="12" max="50" placeholder="Age"><br>
+		<br>
+		<p>Father's name :</p>
+		<input  class="neeru" type="text" name="Father's name"><br>
+		<br>
+	<p>	Mother's name : </p>
+		<input class="neeru"  type="text" name="Mother's name"><br>
+		<br>
+		<p>Phone number :</p> 
+        <input  class="neeru" type="Tel" name="Phone number" value="+91 " ><br>
+        <br>
+		<p>Add your comment :</p> <br>
+		<textarea style="background: none;" rows="10" cols="100" name="comment"> 
+		</textarea>
+		<br>
+		<br>
+		<input style="font-size:20px; border:turquoise solid 5px; overflow:hidden;outline:none;" type="submit" name="Submit" href="connect.php">
+        </fieldset>
+</form>
+</div>
+<div style="height: 30px; width: 600px;">
+   <footer style="background-color: grey; width: 100%; height: 100%;"> 
+    <a href="#" class="header">faq</a>&#160;&#160;
+    <a href="#" class="header">About us</a>&#160;&#160;
+    <a href="#" class="header">help</a>&#160;&#160;
+    <a href="#" class="header">contact us</a>
+    </footer>
+</div>
+</body>
+</html>
